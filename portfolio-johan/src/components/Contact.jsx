@@ -2,13 +2,11 @@ const Contact = () => {
   return (
     <section className="py-20 px-10 bg-white border-t-3 border-black">
       <div className="max-w-4xl mx-auto text-center">
-        {/* Título estilo Neo-brutalista */}
         <h2 className="text-5xl font-bold mb-10 inline-block bg-brand-accent text-white px-8 py-2 shadow-neo">
           Contact
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-10">
-          {/* Lado de Redes / Info */}
           <div className="text-left space-y-6">
             <h3 className="text-3xl font-bold italic">¿Tienes un proyecto en mente?</h3>
             <p className="text-lg font-medium">
@@ -27,7 +25,6 @@ const Contact = () => {
             </div>
           </div>
 
-          {/* Lado de Acción (Botones) */}
           <div className="flex flex-col justify-center gap-6">
             <a 
               href="/CV_JOHAN_JAEL_LOPEZ_REYES.pdf" 

@@ -24,7 +24,7 @@ const projects = [
 
 const Works = () => {
   return (
-    <section className="py-20 px-10 bg-brand-bg">
+    <section className="py-20 px-10 bg-white border-y-3 border-black">
       <div className="flex flex-col md:flex-row justify-between items-start mb-12 gap-6">
         <h2 className="text-5xl font-bold bg-brand-accent text-white px-6 py-2 shadow-neo inline-block">
           My Works

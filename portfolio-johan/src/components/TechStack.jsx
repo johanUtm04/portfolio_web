@@ -6,10 +6,10 @@ const TechStack = () => {
   ];
 
   return (
-    <section className="py-16 px-10 bg-white border-y-3 border-black">
-      <h2 className="text-4xl font-bold mb-12 inline-block bg-black text-white px-6 py-2 shadow-[4px_4px_0px_0px_#7a1b43]">
+        <section className="py-20 px-10 bg-brand-bg">        
+        <h2 className="text-5xl font-bold bg-brand-accent text-white px-6 py-2 shadow-neo inline-block">
         Tech Stack
-      </h2>
+        </h2>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {stack.map((item, index) => (
@@ -27,6 +27,7 @@ const TechStack = () => {
                 </span>
               ))}
             </div>
+            
           </div>
         ))}
       </div>
