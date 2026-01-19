@@ -24,15 +24,11 @@ const projects = [
 
 const Works = () => {
   return (
-    <section className="py-20 px-10 bg-white border-y-3 border-black">
+    <section id="works" className="py-20 px-10 bg-white border-y-3 border-black">
       <div className="flex flex-col md:flex-row justify-between items-start mb-12 gap-6">
         <h2 className="text-5xl font-bold bg-brand-accent text-white px-6 py-2 shadow-neo inline-block">
           My Works
         </h2>
-        <p className="max-w-md text-lg font-medium">
-          He trabajado en proyectos que van desde el sector médico hasta el retail, 
-          enfocándome siempre en la escalabilidad y la resolución de problemas técnicos[cite: 5, 13, 21].
-        </p>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

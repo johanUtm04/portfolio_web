@@ -6,10 +6,12 @@ const TechStack = () => {
   ];
 
   return (
-        <section className="py-20 px-10 bg-brand-bg">        
+        <section id="stack" className="py-20 px-10 bg-brand-bg">        
+        <div className="flex flex-col md:flex-row justify-between items-start mb-12 gap-6">
         <h2 className="text-5xl font-bold bg-brand-accent text-white px-6 py-2 shadow-neo inline-block">
         Tech Stack
         </h2>
+        </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {stack.map((item, index) => (

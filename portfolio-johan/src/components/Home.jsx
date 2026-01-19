@@ -1,6 +1,6 @@
 const Home = () => {
   return (
-    <section className="flex flex-col md:flex-row items-center justify-between py-20 px-10 gap-10">
+    <section id="home" className="flex flex-col md:flex-row items-center justify-between py-20 px-10 gap-10">
       
       <div className="flex-1">
         <h1 className="text-4xl md:text-6xl font-bold mb-4">

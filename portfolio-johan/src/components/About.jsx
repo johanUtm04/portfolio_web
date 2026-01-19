@@ -1,6 +1,6 @@
 const About = () => {
   return (
-    <section className="flex flex-col md:flex-row items-center justify-between py-20 px-10 gap-16 bg-white border-y-3 border-black">
+    <section id="about" className="flex flex-col md:flex-row items-center justify-between py-20 px-10 gap-16 bg-white border-y-3 border-black">
       
       {/* Left side */}
       <div className="flex-1 hidden md:flex justify-center">

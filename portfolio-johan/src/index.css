@@ -12,6 +12,10 @@
   --shadow-neo: 4px 4px 0px 0px rgba(0,0,0,1);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 @layer base {
   body {
     @apply bg-brand-bg text-black;
