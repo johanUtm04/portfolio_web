@@ -1,0 +1,12 @@
+<section className="flex flex-col md:flex-row items-center justify-between py-20 px-10 gap-10">
+
+flex => Activa el felxbox
+flex-col => elementos en columnas, es decri, uno debajo de otro 
+md:flex-row => en pantallas mas pequeñas, los elemnetos se ponen en fila (texto | imagen)
+items-center => alinea los hijos verticalmente 
+justify-between => deja espacio entre los bloques
+
+py-20 => Padding vertical 
+px-10 => padding horizontal
+
+gap => espacio entre columnas
