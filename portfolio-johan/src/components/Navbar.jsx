@@ -15,6 +15,12 @@ const Navbar = () => {
           <a href="#about" className="group-hover:text-brand-accent transition-colors">About</a>
           <div className="h-1 bg-brand-accent scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></div>
         </li>
+
+        <li className="group">
+          <a href="#TechStack" className="group-hover:text-brand-accent transition-colors">Tech Stack</a>
+          <div className="h-1 bg-brand-accent scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></div>
+        </li>
+
         <li className="group">
           <a href="#works" className="group-hover:text-brand-accent transition-colors">Works</a>
           <div className="h-1 bg-brand-accent scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></div>
