@@ -1,5 +1,6 @@
 import Home from "./components/Home";
 import About from "./components/About";
+import TechStack from './components/TechStack';
 import Works from "./components/Works";
 import Contact from './components/Contact';
 import Navbar from "./components/Navbar";
@@ -13,6 +14,7 @@ function App() {
       <main>
         <Home />
         <About />
+        <TechStack />
         <Works />
         <Contact />
       </main>
