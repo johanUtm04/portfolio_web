@@ -1,15 +1,17 @@
 @import "tailwindcss";
 
 @theme {
+  /* Colors */
   --color-brand-accent: #7a1b43;
-
-  --color-brand-bg: #e55e5;
+  --color-brand-bg: #e5e5e5;
+  --color-brand-yellow: #FDB813;
   
   /* border */
   --border-width-3: 3px;
   
   /* Card Shadown */
   --shadow-neo: 4px 4px 0px 0px rgba(0,0,0,1);
+
 }
 
 html {
