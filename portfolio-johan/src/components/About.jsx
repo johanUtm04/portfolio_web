@@ -5,16 +5,18 @@ const About = () => {
       {/* Left side */}
       <div className="flex-1 hidden md:flex justify-center">
         <div className="border-3 border-brand-accent rounded-3xl p-4 w-full max-w-sm shadow-neo bg-brand-bg aspect-[4/5] flex items-center justify-center">
-          <div className="text-brand-accent w-full h-full border-2 border-dashed border-brand-accent rounded-2xl flex items-center justify-center p-6 text-center">
-             <span className="font-bold italic">"Enfocado en resolver problemas técnicos complejos"</span>
-          </div>
+              <img 
+                className="w-full h-full object-cover rounded-2xl"                
+                src="/code.jpg" 
+                alt="Johan Jael López Reyes" 
+              />
         </div>
       </div>
 
       {/* Right side */}
       <div className="flex-[1.5]">
         <h2 className="text-5xl font-bold mb-6 inline-block bg-brand-accent text-white px-4 py-1 shadow-neo">
-          Hola!!
+          Acerca de Mi
         </h2>
         
         <div className="space-y-4 text-lg font-medium leading-relaxed">

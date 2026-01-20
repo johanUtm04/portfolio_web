@@ -1,33 +1,33 @@
 const projects = [
   {
     title: "Gestión de Activos - PIHCSA",
-    company: "PIHCSA (Sector Médico)",
-    description: "Diseño y puesta en producción de un sistema para control de activos TI. Reparación de código PHP Legacy y optimización de MySQL[cite: 19, 21, 22].",
-    tech: ["PHP", "MySQL", "Backend"],
-    link: "#" 
+    company: "PIHCSA -Sector Médico (Area de sistemas)",
+    description: "Sistema de Gestión de Activos de TI desarrollado para PIHCSA, enfocado en optimizar el control, registro, seguimiento y auditoría de activos tecnológicos dentro del sector médico.",
+    tech: ["PHP", "MySQL", "Laravel", "Full-Stack", "Linux"],
+    link: "https://github.com/johanUtm04/Gesto-de-Activos---PIHCSA/" 
   },
   {
     title: "VetFormat - IMPA",
     company: "IMPA (Freelance)",
     description: "Digitalización de formatos veterinarios migrando procesos de Excel a Laravel. Generación de PDFs dinámicos y control de roles[cite: 25, 27, 28].",
-    tech: ["Laravel", "PHP", "Full-Stack"],
+    tech: ["PHP", "MySQL", "Laravel", "Full-Stack"],
     link: "#" 
   },
   {
-    title: "Infraestructura CCP",
-    company: "Cuidado con el Perro",
-    description: "Intervención técnica nocturna y soporte en infraestructura de red y sistemas[cite: 31, 32].",
+    title: "E_commerce 'LuisHa'",
+    company: "Johan y Luis company",
+    description: "Desarrollo colaborativo Full-Stack enfocado en arquitecturas modernas de JS y gestión de portafolios.",
     tech: ["Infraestructura", "Soporte"],
     link: "#"
   }
 ];
 
 const Works = () => {
-  return (
+  return (  
     <section id="works" className="py-20 px-10 bg-white border-y-3 border-black">
       <div className="flex flex-col md:flex-row justify-between items-start mb-12 gap-6">
         <h2 className="text-5xl font-bold bg-brand-accent text-white px-6 py-2 shadow-neo inline-block">
-          My Works
+          Proyectos
         </h2>
       </div>
 
@@ -35,7 +35,11 @@ const Works = () => {
         {projects.map((project, index) => (
           <div key={index} className="bg-white border-3 border-black p-6 shadow-neo flex flex-col h-full">
             <div className="mb-4 h-40 bg-brand-bg border-2 border-black border-dashed flex items-center justify-center">
-              <span className="text-brand-accent font-bold italic text-sm">Preview Proyecto</span>
+              <img 
+                src="/user.png" 
+                alt="Johan Jael López Reyes" 
+                className="w-full h-full object-cover" 
+              />
             </div>
             
             <h3 className="text-2xl font-bold mb-1">{project.title}</h3>

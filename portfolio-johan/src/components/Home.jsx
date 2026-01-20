@@ -4,7 +4,7 @@ const Home = () => {
       
       <div className="flex-1">
         <h1 className="text-4xl md:text-6xl font-bold mb-4">
-          My name is 
+          Hola! Mi Nombre es
           <span className="block bg-brand-accent text-white inline-block px-4 py-1 mt-4 shadow-neo">
             <div className="italic">
                 Johan Jael Lopez Reyes
@@ -14,16 +14,19 @@ const Home = () => {
         
         <div className="mt-8">
           <span className="bg-brand-accent text-white text-2xl md:text-3xl font-bold px-6 py-2 shadow-neo">
-            I'm Developer
+            Desarrollador de software
           </span>
         </div>
       </div>
 
       <div className="flex-1 flex justify-center">
         <div className="border-3 border-brand-accent rounded-3xl p-6 w-full max-w-md shadow-neo bg-white aspect-square flex items-center justify-center">
-          <div className="text-brand-accent w-full h-full border-3 border-dashed border-brand-accent rounded-2xl flex items-center justify-center">
-             <span className="text-sm font-bold italic">Espacio para tu fotografía</span>
-          </div>
+              {/* Reemplazamos el span por la imagen real */}
+              <img 
+                className="w-full h-full object-cover rounded-2xl"                
+                src="/johan2.jpeg" 
+                alt="Johan Jael López Reyes" 
+              />
         </div>
       </div>
 
