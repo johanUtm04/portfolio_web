@@ -1,8 +1,31 @@
 const TechStack = () => {
+  //Objects Array
   const stack = [
-    { category: "Languages", tools: ["JavaScript", "Python", "PHP", "SQL"] },
-    { category: "Frameworks/Libs", tools: ["React", "Laravel", "Tailwind CSS", "Vite"] },
-    { category: "Tools & Skills", tools: ["Git", "MySQL", "PostgreSQL", "Infrastructure"] }
+    { category: "Languages", 
+    tools: 
+    [
+    {name:"JavaScript", icon:"/icons/js.png"},
+    {name:"Python", icon:"/icons/python.png"},
+    {name:"PHP", icon:"/icons/php.png"},
+    {name:"SQL", icon:"/icons/SQL.png"},
+  ]
+  },
+    { category: "Frameworks/Libs", 
+    
+    tools: [
+      {name: "React", icon:"/icons/react.png"},
+      {name:"Laravel", icon:"/icons/laravel.png"},
+      {name:"Tailwind CSS", icon: "/icons/tailwind.png"},
+      {name:"Bootstrap", icon: "/icons/bootstrap.png"},
+      {name:"Django", icon: "/icons/django.png"},
+      {name:"Vite", icon: "/icons/vite.png"},
+      ] },
+    { category: "Tools",
+      tools: [
+      {name: "Git", icon:"/icons/git.png"},
+      {name: "Mysql", icon:"/icons/mysql.png"},
+      {name: "Github", icon:"/icons/github.png"},
+    ] }
   ];
 
   return (
@@ -21,12 +44,17 @@ const TechStack = () => {
             </h3>
             <div className="flex flex-wrap gap-3">
               {item.tools.map((tool, i) => (
-                <span 
-                  key={i} 
-                  className="bg-white border-2 border-black px-3 py-1 font-bold text-sm shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]"
-                >
-                  {tool}
-                </span>
+              <div
+                key={tool.name}
+                className="flex items-center gap-2 bg-white border-2 border-black px-3 py-2 font-bold text-sm shadow-neo"
+              >
+                <img
+                  src={tool.icon}
+                  alt={tool.name}
+                  className="w-5 h-5"
+                />
+                <span>{tool.name}</span>
+              </div>
               ))}
             </div>
             
