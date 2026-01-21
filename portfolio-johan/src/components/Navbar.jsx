@@ -6,12 +6,10 @@ const createSpark = (e) => {
   for (let i = 0; i < 8; i++) {
     const spark = document.createElement('div');
     
-    // Clases base: posicionamiento absoluto y tamaño
     spark.className = "absolute w-1.5 h-1.5 pointer-events-none z-50";
     
-    // Aplicamos el amarillo del logo directamente
     spark.style.backgroundColor = "#FDB813";    
-    // Sombra para que parezca que brilla (estilo neo-brutalista)
+
     spark.style.border = "1px solid black";
 
     const rect = navbar.getBoundingClientRect();
