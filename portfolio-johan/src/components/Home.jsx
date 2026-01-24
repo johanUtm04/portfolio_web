@@ -24,7 +24,7 @@ const Home = () => {
               {/* Reemplazamos el span por la imagen real */}
               <img 
                 className="w-full h-full object-cover rounded-2xl"                
-                src="/.jpeg" 
+                src="/johan2.jpeg" 
                 alt="Johan Jael López Reyes" 
               />
         </div>
