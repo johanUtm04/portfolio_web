@@ -1,5 +1,21 @@
 @import "tailwindcss";
 
+html, body {
+  /* Ocultamos el cursor real en TODA la página */
+  cursor: none !important;
+}
+
+/* Forzamos que los botones NO tengan cursor propio para que no interfieran */
+button, a, .cursor-pointer {
+  cursor: none !important;
+}
+
+/* Esto asegura que el cursor amarillo siempre esté hasta arriba */
+#root {
+  position: relative;
+  z-index: 1;
+}
+
 @theme {
   /* Colors */
   --color-brand-accent: #7a1b43;
