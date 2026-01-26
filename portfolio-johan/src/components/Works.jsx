@@ -7,7 +7,7 @@ const projects = [
     company: "PIHCSA - Sector Médico",
     description: "Sistema para el control y auditoría de activos tecnológicos.",
     tech: ["PHP", "MySQL", "Laravel", "Linux"],
-    link: "#",
+    link: "https://github.com/johanUtm04/Gesto-de-Activos---PIHCSA",
     img: "/pihcsa.jpeg",
     details: [
       "Arquitectura MVC con Laravel para escalabilidad.",
@@ -22,7 +22,7 @@ const projects = [
     company: "IMPA (Freelance)",
     description: "Digitalización de formatos veterinarios municipales.",
     tech: ["PHP", "MySQL", "Laravel", "PDF Engine"],
-    link: "#",
+    link: "https://github.com/johanUtm04/VetFormat-IMPA",
     img: "/impa.jpeg",
     details: [
       "Migración de procesos basados en Excel a base de datos relacional.",
@@ -36,8 +36,8 @@ const projects = [
     company: "Intecfrac - Soporte a Tiendas García",
     description: "Implementación de servidores y diagnóstico de redes en sitio.",
     tech: ["Servidores SR250", "Redes", "Hardware", "Soporte"],
-    link: "#", // Reemplaza aquí con la URL de la hoja de trabajo
-    isInfra: true, // Marca para identificar que es infraestructura
+    link: "#", 
+    isInfra: true, 
     img: "/soporte_garcia.jpeg",
     details: [
       "Implementación de Servidor Lenovo SR250.",
