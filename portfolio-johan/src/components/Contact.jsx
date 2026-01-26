@@ -32,12 +32,15 @@ const handleEmailClick = () => {
               {/* Botón de correo que protege tu privacidad */}
               <button 
                 onClick={handleEmailClick}
-                className="flex items-center gap-3 group hover:text-brand-accent transition-colors"
+                className="flex flex-col items-start group transition-all"
               >
-                <span className="bg-brand-accent text-white p-2 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] group-hover:translate-x-0.5 group-hover:translate-y-0.5 group-hover:shadow-none transition-all">
-                  📧
-                </span>
-                <span>Enviar correo electrónico</span>
+                <div className="flex items-center gap-3">
+                  <span className="bg-brand-accent text-white p-2 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] group-hover:translate-x-0.5 group-hover:translate-y-0.5 group-hover:shadow-none transition-all">
+                    📧
+                  </span>
+                  <span className="text-xl font-bold group-hover:text-brand-accent">Redactar en Gmail</span>
+                </div>
+                <span className="text-xs opacity-50 ml-12 font-medium">(Se abrirá en una pestaña nueva)</span>
               </button>
 
               <p className="flex items-center gap-3">
