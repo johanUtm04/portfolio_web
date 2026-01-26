@@ -77,7 +77,7 @@ export const translations = {
     company: "Johan y Luis Company",
     description: "Desarrollo Full-Stack enfocado en arquitecturas modernas. (Proyecto actualmente en proceso con Luis, la información puede variar).",
     tech: ["React", "Node.js", "Infraestructura"],
-    link: "#",
+    link: "https://github.com/johanUtm04/e_commerce",
     img: "/e_commerce.jpg",
     details: [
       "Integración de pasarela de pagos simulada.",
@@ -177,7 +177,7 @@ projectsData: [
     company: "Johan & Luis Co.",
     description: "Full-Stack development focused on modern architectures. (Active project, details may evolve).",
     tech: ["React", "Node.js", "Infrastructure"],
-    link: "#",
+    link: "https://github.com/johanUtm04/e_commerce",
     img: "/e_commerce.jpg",
     details: [
       "Mock payment gateway integration for checkout flow.",
