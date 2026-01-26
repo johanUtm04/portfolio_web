@@ -63,23 +63,21 @@ const projects = [
 ];
 
 //Functional Component
-const Works = () => {
-  //Modal State (null)
+const Works = ({ t }) => { // <--- Recibimos t
   const [selectedProject, setSelectedProject] = useState(null);
-  //Function to close Modal
   const closeModal = () => setSelectedProject(null);
 
   return (   
     <section id="works" className="py-20 px-10 bg-white border-y-3 border-black">
       <div className="flex flex-col md:flex-row justify-between items-start mb-12 gap-6">
         <h2 className="text-5xl font-bold bg-brand-accent text-white px-6 py-2 shadow-neo inline-block italic uppercase">
-          Proyectos & Experiencia
+          {t.projectsTitle}
         </h2>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {/* Dynamic List */}
-        {projects.map((project, index) => (
+        {/* Usamos t.projectsData que viene del archivo de traducciones */}
+        {t.projectsData.map((project, index) => (
           <div key={index} className="bg-white border-3 border-black p-6 shadow-neo flex flex-col h-full hover:translate-x-[-4px] hover:translate-y-[-4px] transition-all group">
             <div className="bg-brand-yellow border-2 border-black mb-4 aspect-video overflow-hidden">
               <img 
@@ -97,7 +95,7 @@ const Works = () => {
               onClick={() => setSelectedProject(project)}
               className="w-full text-center bg-brand-accent text-white font-bold py-2 border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:bg-brand-yellow hover:text-black transition-all cursor-pointer uppercase"
             >
-              Ver Detalles
+              {t.viewDetails}
             </button>
           </div>
         ))}
@@ -106,7 +104,7 @@ const Works = () => {
       {selectedProject && (
         <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/60 backdrop-blur-sm p-4" onClick={closeModal}>
           <div 
-            className="bg-white border-4 border-black p-8 max-w-2xl w-full shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] relative"
+            className="bg-white border-4 border-black p-8 max-w-2xl w-full shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] relative overflow-y-auto max-h-[90vh]"
             onClick={(e) => e.stopPropagation()}
           >
             <button onClick={closeModal} className="absolute top-4 right-4 text-3xl font-black hover:text-brand-accent transition-colors cursor-pointer">✕</button>
@@ -123,7 +121,7 @@ const Works = () => {
             {selectedProject.details && (
               <div className="mb-6 space-y-3">
                 <h4 className="font-black uppercase text-md bg-black text-white px-2 inline-block italic">
-                  Puntos Clave / Bitácora:
+                  {t.navHome === "Inicio" ? "Bitácora de Ingeniería:" : "Engineering Log:"}
                 </h4>
                 <ul className="space-y-1 text-sm font-bold">
                   {selectedProject.details.map((detail, i) => (
@@ -134,37 +132,26 @@ const Works = () => {
                 </ul>
               </div>
             )}
-            <div className="flex flex-wrap gap-2 mb-8">
-              <h4 className="font-black uppercase text-md bg-black text-white px-2 inline-block italic border-2 border-black">
-                Tecnologias
-              </h4>
-              {selectedProject.tech.map((t, i) => (
-                <span key={i} className="bg-brand-yellow text-black border-2 border-black px-3 py-1 font-black text-xs uppercase">
-                  {t}
-                </span>
-              ))}
-            </div>
-
+            
+            {/* ... El resto de tus botones usando t.closeProject y t.githubBtn */}
             <div className="flex flex-col sm:flex-row gap-4">
-              <button 
+               <button 
                 onClick={closeModal}
                 className="w-full bg-black text-white font-black py-4 hover:bg-brand-accent transition-all uppercase text-lg border-2 border-black cursor-pointer"
               >
-                Cerrar Expediente
+                {t.closeProject}
               </button>
               <button 
                 onClick={() => window.open(selectedProject.link, '_blank')}
                 className="w-full bg-brand-accent text-white font-black py-4 hover:bg-brand-yellow hover:text-black transition-all uppercase text-lg border-2 border-black cursor-pointer shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]"
               >
-                {selectedProject.isInfra ? 'Ver Hoja de Trabajo' : 'Ver en Github'}
+                {selectedProject.isInfra ? (t.navHome === "Inicio" ? 'Hoja de Trabajo' : 'Work Log') : 'Github'}
               </button>
             </div>
-
           </div>
         </div>
       )}
     </section>
   );
 };
-
 export default Works;
