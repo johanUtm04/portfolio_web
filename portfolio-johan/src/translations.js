@@ -64,7 +64,7 @@ export const translations = {
     tech: ["Servidores SR250", "Redes", "Hardware", "Soporte"],
     link: "#", 
     isInfra: true, 
-    img: "/soporte_garcia.jpeg",
+    img: "/infrestructura.jpeg",
     details: [
       "Implementación de Servidor Lenovo SR250.",
       "Validación y liberación de sistemas UPS críticos.",
@@ -164,7 +164,7 @@ projectsData: [
     tech: ["SR250 Servers", "Networking", "Hardware", "Support"],
     link: "#", 
     isInfra: true, 
-    img: "/soporte_garcia.jpeg",
+    img: "/infrestructura.jpeg",
     details: [
       "On-site deployment of Lenovo ThinkSystem SR250 Server.",
       "Validation and rollout of critical UPS backup systems.",

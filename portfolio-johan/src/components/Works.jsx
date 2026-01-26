@@ -38,7 +38,7 @@ const projects = [
     tech: ["Servidores SR250", "Redes", "Hardware", "Soporte"],
     link: "#", 
     isInfra: true, 
-    img: "/soporte_garcia.jpeg",
+    img: "/infrestructura.jpeg",
     details: [
       "Implementación de Servidor Lenovo SR250.",
       "Validación y liberación de sistemas UPS críticos.",
@@ -142,10 +142,15 @@ const Works = ({ t }) => { // <--- Recibimos t
                 {t.closeProject}
               </button>
               <button 
-                onClick={() => window.open(selectedProject.link, '_blank')}
+                onClick={() => {
+                  const urlToOpen = selectedProject.isInfra ? selectedProject.img : selectedProject.link;
+                  window.open(urlToOpen, '_blank');
+                }}
                 className="w-full bg-brand-accent text-white font-black py-4 hover:bg-brand-yellow hover:text-black transition-all uppercase text-lg border-2 border-black cursor-pointer shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]"
               >
-                {selectedProject.isInfra ? (t.navHome === "Inicio" ? 'Hoja de Trabajo' : 'Work Log') : 'Github'}
+                {selectedProject.isInfra 
+                  ? (t.navHome === "Inicio" ? 'Ver Hoja de Trabajo' : 'View Work Log') 
+                  : 'Github'}
               </button>
             </div>
           </div>
