@@ -8,6 +8,7 @@ const projects = [
     description: "Sistema para el control y auditoría de activos tecnológicos.",
     tech: ["PHP", "MySQL", "Laravel", "Linux"],
     link: "https://github.com/johanUtm04/Gesto-de-Activos---PIHCSA",
+    notion: "https://www.notion.so/Documentacion-Tecnica-2c9bfd20d338806bac33ee7dbc6ab714?source=copy_link", 
     img: "/pihcsa.jpeg",
     details: [
       "Arquitectura MVC con Laravel para escalabilidad.",
@@ -62,8 +63,7 @@ const projects = [
   }
 ];
 
-//Functional Component
-const Works = ({ t }) => { // <--- Recibimos t
+const Works = ({ t }) => {
   const [selectedProject, setSelectedProject] = useState(null);
   const closeModal = () => setSelectedProject(null);
 
@@ -76,29 +76,33 @@ const Works = ({ t }) => { // <--- Recibimos t
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {/* Usamos t.projectsData que viene del archivo de traducciones */}
-        {t.projectsData.map((project, index) => (
-          <div key={index} className="bg-white border-3 border-black p-6 shadow-neo flex flex-col h-full hover:translate-x-[-4px] hover:translate-y-[-4px] transition-all group">
-            <div className="bg-brand-yellow border-2 border-black mb-4 aspect-video overflow-hidden">
-              <img 
-                src={project.img} 
-                alt={project.title} 
-                className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" 
-              />
+        {t.projectsData.map((project, index) => {
+          // Buscamos el link de Notion y Github original en el array local por coincidencia de título
+          const originalData = projects.find(p => p.title === project.title);
+          
+          return (
+            <div key={index} className="bg-white border-3 border-black p-6 shadow-neo flex flex-col h-full hover:translate-x-[-4px] hover:translate-y-[-4px] transition-all group">
+              <div className="bg-brand-yellow border-2 border-black mb-4 aspect-video overflow-hidden">
+                <img 
+                  src={originalData?.img || project.img} 
+                  alt={project.title} 
+                  className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" 
+                />
+              </div>
+              
+              <h3 className="text-2xl font-black mb-1 leading-tight uppercase">{project.title}</h3>
+              <p className="text-brand-accent font-bold text-sm mb-4 uppercase">{project.company}</p>
+              <p className="text-gray-700 mb-6 flex-grow font-medium">{project.description}</p>
+              
+              <button 
+                onClick={() => setSelectedProject({ ...project, ...originalData })}
+                className="w-full text-center bg-brand-accent text-white font-bold py-2 border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:bg-brand-yellow hover:text-black transition-all cursor-pointer uppercase"
+              >
+                {t.viewDetails}
+              </button>
             </div>
-            
-            <h3 className="text-2xl font-black mb-1 leading-tight uppercase">{project.title}</h3>
-            <p className="text-brand-accent font-bold text-sm mb-4 uppercase">{project.company}</p>
-            <p className="text-gray-700 mb-6 flex-grow font-medium">{project.description}</p>
-            
-            <button 
-              onClick={() => setSelectedProject(project)}
-              className="w-full text-center bg-brand-accent text-white font-bold py-2 border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:bg-brand-yellow hover:text-black transition-all cursor-pointer uppercase"
-            >
-              {t.viewDetails}
-            </button>
-          </div>
-        ))}
+          );
+        })}
       </div>
       
       {selectedProject && (
@@ -133,25 +137,35 @@ const Works = ({ t }) => { // <--- Recibimos t
               </div>
             )}
             
-            {/* ... El resto de tus botones usando t.closeProject y t.githubBtn */}
-            <div className="flex flex-col sm:flex-row gap-4">
-               <button 
+            {/* SECCIÓN DE BOTONES OPTIMIZADA */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <button 
                 onClick={closeModal}
-                className="w-full bg-black text-white font-black py-4 hover:bg-brand-accent transition-all uppercase text-lg border-2 border-black cursor-pointer"
+                className={`${selectedProject.notion ? 'sm:col-span-2' : 'sm:col-span-1'} w-full bg-black text-white font-black py-3 hover:bg-gray-800 transition-all uppercase text-lg border-2 border-black cursor-pointer`}
               >
                 {t.closeProject}
               </button>
+
               <button 
                 onClick={() => {
                   const urlToOpen = selectedProject.isInfra ? selectedProject.img : selectedProject.link;
                   window.open(urlToOpen, '_blank');
                 }}
-                className="w-full bg-brand-accent text-white font-black py-4 hover:bg-brand-yellow hover:text-black transition-all uppercase text-lg border-2 border-black cursor-pointer shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]"
+                className="w-full bg-white text-black font-black py-3 hover:bg-gray-100 transition-all uppercase text-lg border-2 border-black cursor-pointer shadow-[4px_4px_0px_0px_rgba(rgba(0,0,0,1))] flex items-center justify-center gap-2"
               >
                 {selectedProject.isInfra 
-                  ? (t.navHome === "Inicio" ? 'Ver Hoja de Trabajo' : 'View Work Log') 
+                  ? (t.navHome === "Inicio" ? 'Evidencia' : 'Evidence') 
                   : 'Github'}
               </button>
+
+              {selectedProject.notion && (
+                <button 
+                  onClick={() => window.open(selectedProject.notion, '_blank')}
+                  className="w-full bg-brand-accent text-white font-black py-3 hover:bg-brand-yellow hover:text-black transition-all uppercase text-lg border-2 border-black cursor-pointer shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]"
+                >
+                  {t.navHome === "Inicio" ? 'Documentación' : 'Notion Docs'}
+                </button>
+              )}
             </div>
           </div>
         </div>
@@ -159,4 +173,5 @@ const Works = ({ t }) => { // <--- Recibimos t
     </section>
   );
 };
+
 export default Works;
