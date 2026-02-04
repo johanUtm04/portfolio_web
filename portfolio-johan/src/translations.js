@@ -34,7 +34,7 @@ export const translations = {
         company: "PIHCSA - Sector Médico",
         description: "Sistema para el control y auditoría de activos tecnológicos.",
         tech: ["PHP", "MySQL", "Laravel", "Linux"],
-        link: "https://github.com/johanUtm04/Gesto-de-Activos---PIHCSA",
+        link: "https://github.com/johanUtm04/gestion_activos_pihcsa",
         notion: "https://www.notion.so/Documentacion-Tecnica-2c9bfd20d338806bac33ee7dbc6ab714?source=copy_link", 
         img: "/pihcsa.jpeg",
         details: [
@@ -134,7 +134,7 @@ projectsData: [
     company: "PIHCSA - Medical Sector",
     description: "System for the control and auditing of technological assets.",
     tech: ["PHP", "MySQL", "Laravel", "Linux"],
-    link: "https://github.com/johanUtm04/Gesto-de-Activos---PIHCSA",
+    link: "https://github.com/johanUtm04/gestion_activos_pihcsa",
     notion: "https://www.notion.so/Documentacion-Tecnica-2c9bfd20d338806bac33ee7dbc6ab714?source=copy_link", 
     img: "/pihcsa.jpeg",
     details: [
