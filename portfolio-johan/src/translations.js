@@ -12,6 +12,7 @@ export const translations = {
     heroGreeting: "¡Hola! Mi nombre es",
     heroRole: "Desarrollador de Software",
     heroLinkedIn: "Visita mi LinkedIn",
+    valueProposition: "Especialista en **digitalización de procesos** y arquitecturas escalables con **Laravel y React**.",
     
     // Acerca de mi
     aboutTitle: "Acerca de Mí",
@@ -113,7 +114,8 @@ export const translations = {
     heroGreeting: "Hi! My name is",
     heroRole: "Software Developer",
     heroLinkedIn: "Visit my linkedIn",
-
+    valueProposition: "Specialist in **process digitization** and scalable architectures with **Laravel and React**.",
+    
     // Acerca de mi
     aboutTitle: "About Me",
     aboutP1: "I'm Johan Jael López Reyes, a Software Engineering professional with hands-on experience in the Full-Stack development lifecycle.",
