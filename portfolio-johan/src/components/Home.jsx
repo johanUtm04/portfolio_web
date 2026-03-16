@@ -7,7 +7,7 @@ const Home = ({ t }) => {
           {t.heroGreeting}
           <span className="block bg-brand-accent text-white inline-block px-4 py-1 mt-4 shadow-neo">
             <div className="italic">
-                Johan Jael Lopez Reyes
+                Johan Jael Lopez Reyess
             </div>
           </span>
         </h1>
