@@ -7,7 +7,7 @@ const Home = ({ t }) => {
           {t.heroGreeting}
           <span className="block bg-brand-accent text-white inline-block px-4 py-1 mt-4 shadow-neo">
             <div className="italic">
-                Johan Jael Lopez Reyess
+                Johan Jael Lopez Reyes
             </div>
           </span>
         </h1>
@@ -17,6 +17,11 @@ const Home = ({ t }) => {
             {t.heroRole}
           </span>
         </div>
+        <br />
+        <a href="https://www.linkedin.com/in/johan-j-lopez-reyes-1132802b5" 
+            target="_blank" className="text-2xl md:text-4xl font-bold text-[#721c3d] hover:underline decoration-4 underline-offset-8">
+            {t.heroLinkedIn}
+        </a>
       </div>
 
       <div className="flex-1 flex justify-center">

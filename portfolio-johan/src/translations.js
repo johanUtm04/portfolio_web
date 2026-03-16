@@ -8,9 +8,10 @@ export const translations = {
     navProjects: "Proyectos",
     navContact: "Contacto",
     
-    // Hero
+    // Home
     heroGreeting: "¡Hola! Mi nombre es",
     heroRole: "Desarrollador de Software",
+    heroLinkedIn: "Visita mi LinkedIn",
     
     // Acerca de mi
     aboutTitle: "Acerca de Mí",
@@ -111,6 +112,7 @@ export const translations = {
     // Home
     heroGreeting: "Hi! My name is",
     heroRole: "Software Developer",
+    heroLinkedIn: "Visit my linkedIn",
 
     // Acerca de mi
     aboutTitle: "About Me",
