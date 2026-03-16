@@ -32,7 +32,7 @@ const projects = [
       "Validación de datos para evitar errores en registros animales."
     ]
   },
-  {
+  {  
     title: "Infraestructura y Soporte",
     company: "Intecfrac - Soporte a Tiendas García",
     description: "Implementación de servidores y diagnóstico de redes en sitio.",

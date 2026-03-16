@@ -58,7 +58,7 @@ const Contact = ({ t }) => {
 
           <div className="flex flex-col justify-center gap-6">
             <a 
-              href="/Ing.JohanLopezReyes.pdf" 
+              href="/Ing.JohanLopezReyes2026.pdf" 
               download
               className="bg-white border-3 border-black text-black text-xl font-bold py-4 shadow-neo hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all text-center"
             >
