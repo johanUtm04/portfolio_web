@@ -22,7 +22,7 @@ const Home = ({ t }) => {
             target="_blank" className="text-2xl md:text-4xl font-bold text-[#721c3d] hover:underline decoration-4 underline-offset-8">
             {t.heroLinkedIn}
         </a>
-
+      <br /> <br />
         <p className="text-lg md:text-2xl text-gray-900 font-medium max-w-2xl leading-snug border-l-8 border-[#721c3d] pl-6 py-2">
         {t.valueProposition}
         </p>
