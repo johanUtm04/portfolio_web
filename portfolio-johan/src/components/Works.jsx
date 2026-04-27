@@ -1,7 +1,23 @@
 import { useState } from 'react';
 
-// Array projects
 const projects = [
+{
+  title: "Hardening & Reingeniería - Corporación Azul",
+  company: "Corporación Azul (Materiales de Construcción)",
+  description: "Reconstrucción y blindaje de infraestructura web tras brecha de seguridad.",
+  tech: ["WordPress", "PHP", "Hardening", "SEO Técnico", "Leaflet.js"],
+  link: "#", // Aquí pon el link si ya está en vivo
+  img: "/corp_azul.png",
+  images: ["/corp_azul.png", "/azul_lighthouse.png"], 
+  details: [
+    "Recuperación forense de activos digitales y eliminación de inyecciones de malware.",
+    "Hardening de servidor (.htaccess) y core (functions.php) para mitigación de ataques XSS y Clickjacking.",
+    "Desarrollo de motor de geolocalización 'Privacy-by-Design' con Leaflet.js para búsqueda de sucursales.",
+    "Optimización de Core Web Vitals alcanzando un Performance de 90+ en auditorías de Lighthouse.",
+    "Implementación de arquitectura de información semántica para SEO y accesibilidad (A11y)."
+  ]
+},
+
   {
     title: "Gestión de Activos - PIHCSA",
     company: "PIHCSA - Sector Médico",

@@ -25,13 +25,32 @@ export const translations = {
     catLanguages: "Lenguajes",
     catFrameworks: "Frameworks / Librerías",
     catTools: "Herramientas",
+    catSecurity: "Seguridad",
+    catAdministration: "Administracion",
+    catCloudHosting : "Nube y Hosting",
 
     // Proyectos (Works)
     projectsTitle: "Proyectos & Experiencia",
     viewDetails: "Ver Detalles",
     closeProject: "Cerrar Expediente",
     projectsData: [
-    {
+      {
+        title: "Hardening & Reingeniería - Corporación Azul",
+        company: "Corporación Azul (Sector Construcción)",
+        description: "Reconstrucción y blindaje de infraestructura web tras brecha de seguridad.",
+        tech: ["WordPress", "PHP", "Hardening", "SEO Técnico", "Leaflet.js"],
+        link: "#", 
+        img: "/corp_azul.jpeg",
+        images: ["/corp_azul.png", "/azul_lighthouse.png"], 
+        details: [
+          "Recuperación forense de activos digitales y eliminación de inyecciones de malware.",
+          "Hardening de servidor (.htaccess) y core para mitigación de ataques XSS y Clickjacking.",
+          "Desarrollo de motor de geolocalización 'Privacy-by-Design' con Leaflet.js.",
+          "Optimización de Core Web Vitals alcanzando un Performance de 90+ en Lighthouse.",
+          "Implementación de arquitectura de información semántica para SEO y accesibilidad."
+        ]
+      },
+      {
         title: "Gestión de Activos - PIHCSA",
         company: "PIHCSA - Sector Médico",
         description: "Sistema para el control y auditoría de activos tecnológicos.",
@@ -39,6 +58,7 @@ export const translations = {
         link: "https://github.com/johanUtm04/gestion_activos_pihcsa",
         notion: "https://www.notion.so/Documentacion-Tecnica-2c9bfd20d338806bac33ee7dbc6ab714?source=copy_link", 
         img: "/pihcsa.jpeg",
+        images: ["/pihcsa1.webp", "/pihcsa2.webp", "/pihcsa3.webp", "/pihcsa4.webp"],
         details: [
         "Arquitectura MVC con Laravel para escalabilidad.",
         "Módulo de auditoría para registro de movimientos de Activos.",
@@ -127,12 +147,31 @@ export const translations = {
     catLanguages: "Languages",
     catFrameworks: "Frameworks / Libs",
     catTools: "Tools",
+    catSecurity: "Security",
+    catAdministration: "Administration",
+    catCloudHosting : "Cloud & Hosting",
     
 // Proyectos (Works) - Versión INGLÉS
 projectsTitle: "Projects & Experience",
 viewDetails: "View Details",
 closeProject: "Close Case File",
-projectsData: [
+  projectsData: [
+  {
+    title: "Hardening & Reengineering - Corporación Azul",
+    company: "Corporación Azul (Construction Sector)",
+    description: "Web infrastructure reconstruction and hardening following a security breach.",
+    tech: ["WordPress", "PHP", "Hardening", "Technical SEO", "Leaflet.js"],
+    link: "#", 
+    img: "/corp_azul.png",
+    images: ["/corp_azul.png", "/azul_lighthouse.png"],
+    details: [
+      "Forensic recovery of digital assets and removal of malicious code injections.",
+      "Server-level (.htaccess) and core hardening to mitigate XSS and Clickjacking attacks.",
+      "Development of a 'Privacy-by-Design' geolocation engine using Leaflet.js.",
+      "Core Web Vitals optimization, achieving 90+ Performance scores on Lighthouse.",
+      "Implementation of semantic information architecture for SEO and Accessibility (A11y)."
+    ]
+  },
   {
     title: "Asset Management - PIHCSA",
     company: "PIHCSA - Medical Sector",
@@ -141,6 +180,7 @@ projectsData: [
     link: "https://github.com/johanUtm04/gestion_activos_pihcsa",
     notion: "https://www.notion.so/Documentacion-Tecnica-2c9bfd20d338806bac33ee7dbc6ab714?source=copy_link", 
     img: "/pihcsa.jpeg",
+    images: ["/pihcsa1.webp", "/pihcsa2.webp", "/pihcsa3.webp", "/pihcsa4.webp"],
     details: [
       "MVC Architecture with Laravel for enhanced scalability.",
       "Audit module for tracking corporate asset movements and history.",

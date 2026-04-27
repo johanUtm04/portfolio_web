@@ -19,6 +19,7 @@ const TechStack = ({ t }) => {
         {name:"Bootstrap", icon: "/icons/bootstrap.png"},
         {name:"Django", icon: "/icons/django.png"},
         {name:"Vite", icon: "/icons/vite.png"},
+        {name:"WordPress", icon: "/icons/Wordpress_Blue_logo.png"},
       ] 
     },
     { 
@@ -27,8 +28,29 @@ const TechStack = ({ t }) => {
         {name: "Git", icon:"/icons/git.png"},
         {name: "Mysql", icon:"/icons/mysql.png"},
         {name: "Github", icon:"/icons/github.png"},
+        {name: "Github", icon:"/icons/github.png"},
+
       ] 
-    }
+    },
+    { 
+      category: t.catSecurity,
+      tools: [
+        {name: "KeePass", icon:"/icons/KeePass.png"},
+      ] 
+    },
+    { 
+      category: t.catCloudHosting,
+      tools: [
+        {name: "Hostinguer", icon:"/icons/Hostinger_logo.png"},
+      ] 
+    },
+      { 
+      category: t.catAdministration,
+      tools: [
+        {name: "cPanel", icon:"/icons/cPanel.png"},
+      ] 
+    }, 
+
   ];
 
   return (
