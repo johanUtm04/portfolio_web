@@ -41,7 +41,7 @@ export const translations = {
         tech: ["WordPress", "PHP", "Hardening", "SEO Técnico", "Leaflet.js"],
         link: "#", 
         img: "/corp_azul.jpeg",
-        images: ["/corp_azul.png", "/azul_lighthouse.png"], 
+        images: ["/corp_azul.png", "/azul_lighthouse.png", "map.png"], 
         details: [
           "Recuperación forense de activos digitales y eliminación de inyecciones de malware.",
           "Hardening de servidor (.htaccess) y core para mitigación de ataques XSS y Clickjacking.",
@@ -163,7 +163,7 @@ closeProject: "Close Case File",
     tech: ["WordPress", "PHP", "Hardening", "Technical SEO", "Leaflet.js"],
     link: "#", 
     img: "/corp_azul.png",
-    images: ["/corp_azul.png", "/azul_lighthouse.png"],
+    images: ["/corp_azul.png", "/azul_lighthouse.png", "map.png"],
     details: [
       "Forensic recovery of digital assets and removal of malicious code injections.",
       "Server-level (.htaccess) and core hardening to mitigate XSS and Clickjacking attacks.",

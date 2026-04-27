@@ -8,7 +8,7 @@ const projects = [
   tech: ["WordPress", "PHP", "Hardening", "SEO Técnico", "Leaflet.js"],
   link: "#", // Aquí pon el link si ya está en vivo
   img: "/corp_azul.png",
-  images: ["/corp_azul.png", "/azul_lighthouse.png"], 
+  images: ["/corp_azul.png", "/azul_lighthouse.png", "map.png"], 
   details: [
     "Recuperación forense de activos digitales y eliminación de inyecciones de malware.",
     "Hardening de servidor (.htaccess) y core (functions.php) para mitigación de ataques XSS y Clickjacking.",
