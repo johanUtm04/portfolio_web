@@ -56,7 +56,7 @@ export const translations = {
         description: "Desarrollo de un ecosistema automatizado de inscripciones con procesamiento de pagos asíncronos y sistema de control perimetral de capacidad en tiempo real.",
         tech: ["Laravel 11", "Stripe API", "Webhooks", "TailwindCSS", "Blade Components"],
         link: "https://github.com/johanUtm04/Carrera-Toluca---Landing-Page", 
-        img: "apturaHome.png",
+        img: "capturaHome.png",
         images: [
           "capturaHome.png", 
           "capturaHome2.png", 
