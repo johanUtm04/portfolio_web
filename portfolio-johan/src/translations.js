@@ -56,15 +56,15 @@ export const translations = {
         description: "Desarrollo de un ecosistema automatizado de inscripciones con procesamiento de pagos asíncronos y sistema de control perimetral de capacidad en tiempo real.",
         tech: ["Laravel 11", "Stripe API", "Webhooks", "TailwindCSS", "Blade Components"],
         link: "https://github.com/johanUtm04/Carrera-Toluca---Landing-Page", 
-        img: "public/capturaHome.png",
+        img: "apturaHome.png",
         images: [
-          "public/capturaHome.png", 
-          "public/capturaHome2.png", 
-          "public/capturaHome3.png", 
-          "public/capturaHome4.png", 
-          "public/capturaRegisterForm.png", 
-          "public/capturaPay.png",
-          "public/capturaDashboardCorredor.png"
+          "capturaHome.png", 
+          "capturaHome2.png", 
+          "capturaHome3.png", 
+          "capturaHome4.png", 
+          "capturaRegisterForm.png", 
+          "capturaPay.png",
+          "capturaDashboardCorredor.png"
         ], 
         details: [
           "Diseñé e implementé el flujo de autenticación y el panel de control personalizado para la gestión del perfil del atleta.",
@@ -202,15 +202,15 @@ closeProject: "Close Case File",
   description: "Architected an automated athlete registration ecosystem featuring asynchronous server-to-server checkout handshakes and real-time perimeter capacity enforcement.",
   tech: ["Laravel 11", "Stripe API", "Webhooks", "TailwindCSS", "Blade Components"],
   link: "https://github.com/johanUtm04/Carrera-Toluca---Landing-Page", 
-  img: "public/capturaHome.png",
+  img: "capturaHome.png",
   images: [
-    "public/capturaHome.png", 
-    "public/capturaHome2.png", 
-    "public/capturaHome3.png", 
-    "public/capturaHome4.png", 
-    "public/capturaRegisterForm.png", 
-    "public/capturaPay.png",
-    "public/capturaDashboardCorredor.png"
+    "capturaHome.png", 
+    "capturaHome2.png", 
+    "capturaHome3.png", 
+    "capturaHome4.png", 
+    "capturaRegisterForm.png", 
+    "capturaPay.png",
+    "capturaDashboardCorredor.png"
   ], 
   details: [
     "Designed and implemented the custom user authentication pipeline and dashboard layout for real-time runner status tracking.",
