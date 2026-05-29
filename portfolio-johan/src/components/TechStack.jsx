@@ -28,8 +28,6 @@ const TechStack = ({ t }) => {
         {name: "Git", icon:"/icons/git.png"},
         {name: "Mysql", icon:"/icons/mysql.png"},
         {name: "Github", icon:"/icons/github.png"},
-        {name: "Github", icon:"/icons/github.png"},
-
       ] 
     },
     { 

@@ -51,6 +51,30 @@ export const translations = {
         ]
       },
       {
+        title: "Pasarela de Pagos & Control de Aforo — Circuito Toluca 2026",
+        company: "Carrera Corporación Azul",
+        description: "Desarrollo de un ecosistema automatizado de inscripciones con procesamiento de pagos asíncronos y sistema de control perimetral de capacidad en tiempo real.",
+        tech: ["Laravel 11", "Stripe API", "Webhooks", "TailwindCSS", "Blade Components"],
+        link: "https://github.com/johanUtm04/Carrera-Toluca---Landing-Page", 
+        img: "public/capturaHome.png",
+        images: [
+          "public/capturaHome.png", 
+          "public/capturaHome2.png", 
+          "public/capturaHome3.png", 
+          "public/capturaHome4.png", 
+          "public/capturaRegisterForm.png", 
+          "public/capturaPay.png",
+          "public/capturaDashboardCorredor.png"
+        ], 
+        details: [
+          "Diseñé e implementé el flujo de autenticación y el panel de control personalizado para la gestión del perfil del atleta.",
+          "Integré la API de Stripe Checkout para el procesamiento seguro de transacciones con tarjeta de crédito y débito estructuradas en MXN.",
+          "Desarrollé un controlador de Webhooks asíncronos (server-to-server) para validar y confirmar los estados de pago directamente en el backend.",
+          "Implementé un mecanismo de validación perimetral que intercepta peticiones y bloquea inscripciones redirigiendo a una vista de 'Cupo Completo' al alcanzar los 800 usuarios pagados.",
+          "Protegí los modelos de Eloquent contra ataques de asignación masiva (Mass-Assignment) y configuré validaciones estrictas en los Request HTTP."
+        ]
+      },
+      {
         title: "Gestión de Activos - PIHCSA",
         company: "PIHCSA - Sector Médico",
         description: "Sistema para el control y auditoría de activos tecnológicos.",
@@ -108,7 +132,7 @@ export const translations = {
       "Diseño responsivo con enfoque Mobile-First.",
       "Colaboración técnica para optimización de tiempos de carga."
     ]
-  }
+  },
     ],
     
     // Contacto
@@ -172,6 +196,30 @@ closeProject: "Close Case File",
       "Implementation of semantic information architecture for SEO and Accessibility (A11y)."
     ]
   },
+{
+  title: "Payment Gateway & Capacity Governance — Circuito Toluca 2026",
+  company: "Carrera Corporación Azul",
+  description: "Architected an automated athlete registration ecosystem featuring asynchronous server-to-server checkout handshakes and real-time perimeter capacity enforcement.",
+  tech: ["Laravel 11", "Stripe API", "Webhooks", "TailwindCSS", "Blade Components"],
+  link: "https://github.com/johanUtm04/Carrera-Toluca---Landing-Page", 
+  img: "public/capturaHome.png",
+  images: [
+    "public/capturaHome.png", 
+    "public/capturaHome2.png", 
+    "public/capturaHome3.png", 
+    "public/capturaHome4.png", 
+    "public/capturaRegisterForm.png", 
+    "public/capturaPay.png",
+    "public/capturaDashboardCorredor.png"
+  ], 
+  details: [
+    "Designed and implemented the custom user authentication pipeline and dashboard layout for real-time runner status tracking.",
+    "Integrated the Stripe Checkout API to safely process itemized transactions structured natively in Mexican Pesos (MXN).",
+    "Engineered an asynchronous server-to-server Webhook controller to process background payment events and ensure database state mutability.",
+    "Deployed a perimeter validation mechanism that intercepts inbound HTTP traffic and enforces system boundaries once the 800-paid-user ceiling is met.",
+    "Secured Eloquent architectural models against Mass-Assignment vulnerabilities and enforced strict form-request validation layers."
+  ]
+},
   {
     title: "Asset Management - PIHCSA",
     company: "PIHCSA - Medical Sector",

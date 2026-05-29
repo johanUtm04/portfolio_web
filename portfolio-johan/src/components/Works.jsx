@@ -17,7 +17,6 @@ const projects = [
     "Implementación de arquitectura de información semántica para SEO y accesibilidad (A11y)."
   ]
 },
-
   {
     title: "Gestión de Activos - PIHCSA",
     company: "PIHCSA - Sector Médico",
