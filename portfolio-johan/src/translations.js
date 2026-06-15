@@ -35,11 +35,26 @@ export const translations = {
     closeProject: "Cerrar Expediente",
     projectsData: [
       {
+      title: "SmartMatch-Analytics",
+      company: "Corporación Azul (Sector Construcción)",
+      description: "Un motor analítico de backend de alto rendimiento diseñado para procesar equivalencias técnicas de productos, calcular rangos de rendimiento dinámicos y detectar riesgos de canibalización comercial entre marcas competidoras de productos químicos e impermeabilizantes.",
+      tech: ["Laravel", "PHP", "MySQL", "Eloquent ORM", "REST APIs"],
+      link: "https://github.com/johanUtm04/SmartMatch-Analytics-Corporacion-Azul", 
+      img: "/building.jpg",
+      images: ["/smartmatch_dashboard.png", "/database_schema.png"],
+      details: [
+        "Diseñé e implementé un esquema de base de datos relacional en MySQL para gestionar métricas de rendimiento de producto dinámicas y multivariable (como los rangos de cobertura dependientes del tipo de sustrato).",
+        "Desarrollé un motor algorítmico en el backend utilizando Laravel para realizar cruces de información automáticos entre fichas técnicas e identificar vulnerabilidades de canibalización interna entre líneas de productos superpuestas.",
+        "Construí pipelines de ingesta de datos normalizados utilizando Laravel Seeders y Query Builder para eliminar el ruido de los conjuntos de datos industriales y agilizar el benchmarking competitivo de marcas.",
+        "Expuse una API RESTful estructurada y de alto rendimiento para entregar discrepancias de precios en tiempo real y cálculos dinámicos de costo por metro cuadrado ($/m²)."
+      ]
+    },
+      {
         title: "Hardening & Reingeniería - Corporación Azul",
         company: "Corporación Azul (Sector Construcción)",
         description: "Reconstrucción y blindaje de infraestructura web tras brecha de seguridad.",
         tech: ["WordPress", "PHP", "Hardening", "SEO Técnico", "Leaflet.js"],
-        link: "#", 
+        link: "#pendiente", 
         img: "/corp_azul.jpeg",
         images: ["/corp_azul.png", "/azul_lighthouse.png", "map.png"], 
         details: [
@@ -180,12 +195,27 @@ projectsTitle: "Projects & Experience",
 viewDetails: "View Details",
 closeProject: "Close Case File",
   projectsData: [
-  {
+    {
+      title: "SmartMatch-Analytics",
+      company: "Corporación Azul (Construction Sector)",
+      description: "A high-performance backend analytics engine designed to process technical product equivalences, compute dynamic yield ranges, and detect commercial cannibalization risks across competing chemical and waterproofing brands.",
+      tech: ["Laravel", "PHP", "MySQL", "Eloquent ORM", "REST APIs"],
+      link: "https://github.com/johanUtm04/SmartMatch-Analytics-Corporacion-Azul", 
+      img: "/smartmatch_dashboard.png",
+      images: ["/smartmatch_dashboard.png", "/database_schema.png"],
+      details: [
+        "Designed and implemented a relational database schema in MySQL to manage dynamic, multi-variable product performance metrics (such as substrate-dependent coverage ranges).",
+        "Developed a backend algorithmic engine in Laravel to automatically cross-reference product specs and identify internal cannibalization vulnerabilities between overlapping product lines.",
+        "Built normalized data ingestion pipelines utilizing Laravel Seeders and Query Builder to eliminate industrial dataset noise and streamline competitive brand benchmarking.",
+        "Exposed a structured, high-throughput RESTful API to deliver real-time pricing discrepancies and dynamic cost-per-square-meter ($/m²) computations."
+      ]
+    },  
+    { 
     title: "Hardening & Reengineering - Corporación Azul",
     company: "Corporación Azul (Construction Sector)",
     description: "Web infrastructure reconstruction and hardening following a security breach.",
     tech: ["WordPress", "PHP", "Hardening", "Technical SEO", "Leaflet.js"],
-    link: "#", 
+    link: "#pendiente", 
     img: "/corp_azul.png",
     images: ["/corp_azul.png", "/azul_lighthouse.png", "map.png"],
     details: [
@@ -195,7 +225,7 @@ closeProject: "Close Case File",
       "Core Web Vitals optimization, achieving 90+ Performance scores on Lighthouse.",
       "Implementation of semantic information architecture for SEO and Accessibility (A11y)."
     ]
-  },
+    },
 {
   title: "Payment Gateway & Capacity Governance — Circuito Toluca 2026",
   company: "Carrera Corporación Azul",
