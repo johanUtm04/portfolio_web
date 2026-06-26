@@ -45,8 +45,6 @@ export const translations = {
       details: [
         "Diseñé e implementé un esquema de base de datos relacional en MySQL para gestionar métricas de rendimiento de producto dinámicas y multivariable (como los rangos de cobertura dependientes del tipo de sustrato).",
         "Desarrollé un motor algorítmico en el backend utilizando Laravel para realizar cruces de información automáticos entre fichas técnicas e identificar vulnerabilidades de canibalización interna entre líneas de productos superpuestas.",
-        "Construí pipelines de ingesta de datos normalizados utilizando Laravel Seeders y Query Builder para eliminar el ruido de los conjuntos de datos industriales y agilizar el benchmarking competitivo de marcas.",
-        "Expuse una API RESTful estructurada y de alto rendimiento para entregar discrepancias de precios en tiempo real y cálculos dinámicos de costo por metro cuadrado ($/m²).",
         "Decidí crear una arquitectura desacoplada usando Laravel como API REST sin estado y React para el frontend. Esto elimina por completo la necesidad de recargar la página al alternar entre las métricas de volumen de ventas e ingresos. Dado que React no puede conectarse de forma segura directamente a una base de datos SQL, Laravel actúa como capa de abstracción de datos, gestionando agregaciones SQL complejas y entregando datos JSON limpios. Esto garantiza un rendimiento óptimo para bibliotecas de visualización de datos como Recharts, a la vez que mantiene la seguridad de la base de datos."
       ]
     },
@@ -207,8 +205,6 @@ closeProject: "Close Case File",
       details: [
         "Designed and implemented a relational database schema in MySQL to manage dynamic, multi-variable product performance metrics (such as substrate-dependent coverage ranges).",
         "Developed a backend algorithmic engine in Laravel to automatically cross-reference product specs and identify internal cannibalization vulnerabilities between overlapping product lines.",
-        "Built normalized data ingestion pipelines utilizing Laravel Seeders and Query Builder to eliminate industrial dataset noise and streamline competitive brand benchmarking.",
-        "Exposed a structured, high-throughput RESTful API to deliver real-time pricing discrepancies and dynamic cost-per-square-meter ($/m²) computations.",
         "I decided to build a decoupled architecture using Laravel as a stateless REST API and React for the frontend. This completely eliminates the need for full-page reloads when toggling between sales volume and revenue metrics. Since React cannot securely connect directly to a SQL database, Laravel serves as the data abstraction layer, handling complex SQL aggregations and delivering clean JSON payloads. This ensures optimal performance for data visualization libraries like Recharts while keeping the database secure."
       ]
     },  

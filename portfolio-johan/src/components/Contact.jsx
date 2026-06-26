@@ -1,18 +1,29 @@
-import React from 'react';
+import React from "react";
 
 const Contact = ({ t }) => {
+  const isSpanish = t.navHome === "Inicio";
+
+  const cvFile = isSpanish
+    ? "/CV_JOHAN_LOPEZ_INGENIERO_DE_SOFTWARE.pdf"
+    : "/RESUME_JOHAN_LOPEZ_SOFTWARE_ENGINEER.pdf";
+
+    
   const handleEmailClick = () => {
     const email = "johanlopezrey1@gmail.com";
-    // Usamos lógica simple para el asunto según el idioma
-    const subject = t.navHome === "Inicio" 
-      ? "Contacto desde Portafolio Web" 
+
+    const subject = isSpanish
+      ? "Contacto desde Portafolio Web"
       : "Contact from Web Portfolio";
-    const body = t.navHome === "Inicio"
+
+    const body = isSpanish
       ? "Hola Johan, vi tu portafolio y me gustaría platicar contigo sobre..."
       : "Hi Johan, I saw your portfolio and would like to talk to you about...";
-    
-    const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-    window.open(gmailUrl, '_blank');
+
+    const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${encodeURIComponent(
+      subject
+    )}&body=${encodeURIComponent(body)}`;
+
+    window.open(gmailUrl, "_blank");
   };
 
   return (
@@ -25,10 +36,8 @@ const Contact = ({ t }) => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-10">
           <div className="text-left space-y-6">
             <h3 className="text-3xl font-bold italic">{t.contactSubtitle}</h3>
-            <p className="text-lg font-medium">
-              {t.contactText}
-            </p>
-            
+            <p className="text-lg font-medium">{t.contactText}</p>
+
             <div className="space-y-4 font-bold">
               <button 
                 onClick={handleEmailClick}
@@ -43,7 +52,7 @@ const Contact = ({ t }) => {
                   </span>
                 </div>
                 <span className="text-xs opacity-50 ml-12 font-medium">
-                  ({t.navHome === "Inicio" ? "Se abrirá en una pestaña nueva" : "Will open in a new tab"})
+                  ({isSpanish ? "Se abrirá en una pestaña nueva" : "Will open in a new tab"})
                 </span>
               </button>
 
@@ -58,13 +67,13 @@ const Contact = ({ t }) => {
 
           <div className="flex flex-col justify-center gap-6">
             <a 
-              href="/JohanLopezReyesCurriculum.pdf"
+              href={cvFile}
               download
               className="bg-white border-3 border-black text-black text-xl font-bold py-4 shadow-neo hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all text-center"
             >
               {t.downloadCV}
             </a>
-            
+
             <a 
               href="https://github.com/johanutm04" 
               target="_blank"
