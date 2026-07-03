@@ -1,10 +1,12 @@
 const TechStack = ({ t }) => {
   // Metemos el array aquí para que se actualice al cambiar de idioma
   const stack = [
-    { 
+  { 
       category: t.catLanguages, 
       tools: [
         {name:"JavaScript", icon:"/icons/js.png"},
+        {name:"HTML5", icon:"/icons/html5.png"},
+        {name:"CSS3", icon:"/icons/css3.png"},
         {name:"Python", icon:"/icons/python.png"},
         {name:"PHP", icon:"/icons/php.png"},
         {name:"SQL", icon:"/icons/SQL.png"},
