@@ -28,10 +28,10 @@ const Home = ({ t }) => {
         </p>
       </div>
 
-      <div className="flex-1 flex justify-center">
-        <div className="border-3 border-brand-accent rounded-3xl p-6 w-full max-w-md shadow-neo bg-white aspect-square flex items-center justify-center">
+    <div className="flex-1 flex justify-center">
+        <div className="border-3 border-brand-accent rounded-3xl p-4 w-full max-w-md shadow-neo bg-slate-50 aspect-square flex items-center justify-center">
               <img 
-                className="w-full h-full object-cover rounded-2xl"                
+                className="w-full h-full object-contain rounded-2xl"                
                 src="/johan.jpg" 
                 alt="Johan Jael López Reyes" 
               />
