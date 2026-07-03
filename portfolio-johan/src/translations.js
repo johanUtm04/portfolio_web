@@ -11,7 +11,6 @@ export const translations = {
     // Home
     heroGreeting: "¡Hola! Mi nombre es",
     heroRole: "Desarrollador de Software",
-    heroLinkedIn: "Visita mi LinkedIn",
     valueProposition: "Especialista en **digitalización de procesos** y arquitecturas escalables con **Laravel y React**.",
     
     // Acerca de mi
@@ -171,7 +170,6 @@ export const translations = {
     // Home
     heroGreeting: "Hi! My name is",
     heroRole: "Software Developer",
-    heroLinkedIn: "Visit my linkedIn",
     valueProposition: "Specialist in **process digitization** and scalable architectures with **Laravel and React**.",
     
     // Acerca de mi
