@@ -39,9 +39,9 @@ export default function SocialFloatingMenu({ t }) {
         style={{ clipPath: 'polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%)' }} 
         aria-label="Social Menu"
       >
-        <span className={`text-xl font-black transition-transform duration-300 ${isOpen ? 'rotate-45' : 'rotate-0'}`}>
-          M
-        </span>
+      <span className={`text-2xl font-black transition-transform duration-300 inline-block ${isOpen ? 'rotate-45' : 'rotate-0'}`}>
+        +
+      </span>
       </button>
 
     </div>
