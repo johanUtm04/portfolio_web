@@ -34,20 +34,6 @@ export const translations = {
     closeProject: "Cerrar Expediente",
     projectsData: [
       {
-      title: "SmartMatch-Analytics",
-      company: "Corporación Azul (Sector Construcción)",
-      description: "Un motor analítico de backend de alto rendimiento diseñado para procesar equivalencias técnicas de productos, calcular rangos de rendimiento dinámicos y detectar riesgos de canibalización comercial entre marcas competidoras de productos químicos e impermeabilizantes.",
-      tech: ["Laravel", "PHP", "MySQL", "Eloquent ORM", "REST APIs"],
-      link: "https://github.com/johanUtm04/SmartMatch-Analytics-Corporacion-Azul", 
-      img: "/building.jpg",
-      images: ["/smartmatch_dashboard.png", "/database_schema.png"],
-      details: [
-        "Diseñé e implementé un esquema de base de datos relacional en MySQL para gestionar métricas de rendimiento de producto dinámicas y multivariable (como los rangos de cobertura dependientes del tipo de sustrato).",
-        "Desarrollé un motor algorítmico en el backend utilizando Laravel para realizar cruces de información automáticos entre fichas técnicas e identificar vulnerabilidades de canibalización interna entre líneas de productos superpuestas.",
-        "Decidí crear una arquitectura desacoplada usando Laravel como API REST sin estado y React para el frontend. Esto elimina por completo la necesidad de recargar la página al alternar entre las métricas de volumen de ventas e ingresos. Dado que React no puede conectarse de forma segura directamente a una base de datos SQL, Laravel actúa como capa de abstracción de datos, gestionando agregaciones SQL complejas y entregando datos JSON limpios. Esto garantiza un rendimiento óptimo para bibliotecas de visualización de datos como Recharts, a la vez que mantiene la seguridad de la base de datos."
-      ]
-    },
-      {
         title: "OPTIMIZACIÓN Y DISPONIBILIDAD WEB - Corporación Azul",
         company: "Corporación Azul (Sector Construcción)",
         description: "Reconstrucción y blindaje de infraestructura web tras brecha de seguridad.",
@@ -192,20 +178,6 @@ projectsTitle: "Projects & Experience",
 viewDetails: "View Details",
 closeProject: "Close Case File",
   projectsData: [
-    {
-      title: "SmartMatch-Analytics",
-      company: "Corporación Azul (Construction Sector)",
-      description: "A high-performance backend analytics engine designed to process technical product equivalences, compute dynamic yield ranges, and detect commercial cannibalization risks across competing chemical and waterproofing brands.",
-      tech: ["Laravel", "PHP", "MySQL", "Eloquent ORM", "REST APIs"],
-      link: "https://github.com/johanUtm04/SmartMatch-Analytics-Corporacion-Azul", 
-      img: "/smartmatch_dashboard.png",
-      images: ["/smartmatch_dashboard.png", "/database_schema.png"],
-      details: [
-        "Designed and implemented a relational database schema in MySQL to manage dynamic, multi-variable product performance metrics (such as substrate-dependent coverage ranges).",
-        "Developed a backend algorithmic engine in Laravel to automatically cross-reference product specs and identify internal cannibalization vulnerabilities between overlapping product lines.",
-        "I decided to build a decoupled architecture using Laravel as a stateless REST API and React for the frontend. This completely eliminates the need for full-page reloads when toggling between sales volume and revenue metrics. Since React cannot securely connect directly to a SQL database, Laravel serves as the data abstraction layer, handling complex SQL aggregations and delivering clean JSON payloads. This ensures optimal performance for data visualization libraries like Recharts while keeping the database secure."
-      ]
-    },  
     { 
     title: "WEB OPTIMIZATION AND AVAILABILITY - Corporación Azul",
     company: "Corporación Azul (Construction Sector)",
