@@ -16,7 +16,7 @@ export const translations = {
     
     // Acerca de mi
     aboutTitle: "Acerca de Mí",
-    aboutP1: "Soy Johan Jael López Reyes, con una Ingeniería en Gestión y Creación de Software con experiencia práctica en el ciclo completo de desarrollo (Full-Stack).",
+    aboutP1: "Soy Johan Jael López Reyes, un Ingeniero en Desarrollo de Software Multiplataforma con experiencia práctica en el ciclo completo de desarrollo (Full-Stack).",
     aboutP2: "Me especializo en desarrollar soluciones escalables utilizando JavaScript, Python y PHP, o frameworks como Laravel, Django o React. Mi enfoque principal es optimizar procesos de negocio mediante software moderno, como lo hice al digitalizar la gestión de formatos veterinarios para IMPA (Instituto Municipal de Protección Animal).",
     aboutP3: "Cuento con experiencia reparando errores críticos en sistemas legacy y optimizando bases de datos MySQL en entornos del sector médico. Mi meta es siempre aportar valor técnico y eficiencia a cada proyecto.",
 
@@ -176,7 +176,7 @@ export const translations = {
     
     // Acerca de mi
     aboutTitle: "About Me",
-    aboutP1: "I'm Johan Jael López Reyes, a Software Engineering professional with hands-on experience in the Full-Stack development lifecycle.",
+    aboutP1: "I am Johan Jael López Reyes, a Multiplatform Software Development Engineer with practical experience in the complete development cycle (Full-Stack).",
     aboutP2: "I specialize in building scalable solutions using JavaScript, Python, and PHP, alongside frameworks like Laravel, Django, or React. My primary focus is optimizing business processes through modern software, as demonstrated by digitizing veterinary management workflows for IMPA (Municipal Institute of Animal Protection).",
     aboutP3: "I have experience fixing critical bugs in legacy systems and optimizing MySQL databases within the medical sector. My goal is always to provide technical value and efficiency to every project I collaborate on.",
     
