@@ -32,7 +32,7 @@ const Home = ({ t }) => {
         <div className="border-3 border-brand-accent rounded-3xl p-6 w-full max-w-md shadow-neo bg-white aspect-square flex items-center justify-center">
               <img 
                 className="w-full h-full object-cover rounded-2xl"                
-                src="/johan2.jpeg" 
+                src="/johan.jpg" 
                 alt="Johan Jael López Reyes" 
               />
         </div>
