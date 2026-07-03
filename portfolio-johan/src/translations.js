@@ -49,7 +49,7 @@ export const translations = {
       ]
     },
       {
-        title: "Hardening & Reingeniería - Corporación Azul",
+        title: "OPTIMIZACIÓN Y DISPONIBILIDAD WEB - Corporación Azul",
         company: "Corporación Azul (Sector Construcción)",
         description: "Reconstrucción y blindaje de infraestructura web tras brecha de seguridad.",
         tech: ["WordPress", "PHP", "Hardening", "SEO Técnico", "Leaflet.js"],
@@ -209,7 +209,7 @@ closeProject: "Close Case File",
       ]
     },  
     { 
-    title: "Hardening & Reengineering - Corporación Azul",
+    title: "WEB OPTIMIZATION AND AVAILABILITY - Corporación Azul",
     company: "Corporación Azul (Construction Sector)",
     description: "Web infrastructure reconstruction and hardening following a security breach.",
     tech: ["WordPress", "PHP", "Hardening", "Technical SEO", "Leaflet.js"],
