@@ -34,6 +34,26 @@ export const translations = {
     closeProject: "Cerrar Expediente",
     projectsData: [
       {
+        title: "Respuesta a Incidentes - Baneo de WhatsApp Business",
+        company: "Caso Interno / Marketing Ops",
+        description: "Diagnóstico y contención de un incidente de seguridad/compliance que resultó en el baneo permanente de un canal comercial crítico.",
+        tech: ["Incident Response", "Root Cause Analysis", "Documentación Técnica", "Mitigación de Riesgo"],
+        link: "https://github.com/johanUtm04/tu-repo/blob/main/INC-2026-0727-whatsapp-business-ban.md",
+        img: "/cybersecurity_incidents/whatsApp_incident/incident_whatsapp_1part.jpeg",
+        images: [
+          "/cybersecurity_incidents/whatsApp_incident/incident_whatsapp_2part.jpeg",
+          "/cybersecurity_incidents/whatsApp_incident/incident_whatsapp_3part.jpeg",
+          "/cybersecurity_incidents/whatsApp_incident/incident_whatsapp_4part.jpeg",
+        ],
+        details: [
+          "Análisis de causa raíz: envío masivo no segmentado detonó el umbral anti-spam de Meta.",
+          "Contención inmediata: hardening de privacidad y aislamiento de sesiones multi-dispositivo durante la restricción.",
+          "Triage post-desbloqueo: atención manual priorizada para evitar más reportes de usuarios.",
+          "Reporte de incidente formal (Markdown) con hallazgos, impacto y plan de acción.",
+          "Recomendación estratégica: migración a WhatsApp Business API para eliminar el riesgo a futuro."
+        ]
+      },
+      {
         title: "OPTIMIZACIÓN Y DISPONIBILIDAD WEB - Corporación Azul",
         company: "Corporación Azul (Sector Construcción)",
         description: "Reconstrucción y blindaje de infraestructura web tras brecha de seguridad.",
@@ -177,6 +197,26 @@ projectsTitle: "Projects & Experience",
 viewDetails: "View Details",
 closeProject: "Close Case File",
   projectsData: [
+    {
+      title: "Incident Response - WhatsApp Business Ban",
+      company: "Internal Case / Marketing Ops",
+      description: "Diagnosis and containment of a security/compliance incident that resulted in the permanent ban of a critical business communication channel.",
+      tech: ["Incident Response", "Root Cause Analysis", "Technical Documentation", "Risk Mitigation"],
+      link: "https://github.com/johanUtm04/tu-repo/blob/main/INC-2026-0727-whatsapp-business-ban.md",
+      img: "/cybersecurity_incidents/whatsApp_incident/incident_whatsapp_1part.jpeg",
+      images: [
+        "/cybersecurity_incidents/whatsApp_incident/incident_whatsapp_2part.jpeg",
+        "/cybersecurity_incidents/whatsApp_incident/incident_whatsapp_3part.jpeg",
+        "/cybersecurity_incidents/whatsApp_incident/incident_whatsapp_4part.jpeg",
+      ],
+      details: [
+        "Root cause analysis: an unsegmented bulk broadcast triggered Meta's anti-spam threshold.",
+        "Immediate containment: privacy hardening and multi-device session isolation during the restriction window.",
+        "Post-unban triage: prioritized manual response to prevent further user reports.",
+        "Formal incident report (Markdown) documenting findings, impact, and action plan.",
+        "Strategic recommendation: migration to the WhatsApp Business API to eliminate future risk."
+      ]
+    },
     { 
     title: "WEB OPTIMIZATION AND AVAILABILITY - Corporación Azul",
     company: "Corporación Azul (Construction Sector)",

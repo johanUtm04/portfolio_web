@@ -1,12 +1,27 @@
 import { useState } from 'react';
 
 const projects = [
+  {
+  title: "Incident Response - WhatsApp Business Ban",
+  company: "Caso Interno / Marketing Ops",
+  description: "Diagnóstico y contención de un incidente de seguridad/compliance que resultó en el baneo permanente de un canal comercial crítico.",
+  tech: ["Incident Response", "Root Cause Analysis", "Documentación Técnica", "Mitigación de Riesgo"],
+  link: "https://github.com/tu-usuario/tu-repo/blob/main/INC-2026-0727-whatsapp-business-ban.md",
+  img: "/cybersecurity_incidents/whatsApp_incident/incident_whatsapp_1part.jpeg",
+  details: [
+    "Análisis de causa raíz: envío masivo no segmentado detonó el umbral anti-spam de Meta.",
+    "Contención inmediata: hardening de privacidad y aislamiento de sesiones multi-dispositivo durante la restricción.",
+    "Triage post-desbloqueo: atención manual priorizada para evitar más reportes de usuarios.",
+    "Reporte de incidente formal (Markdown) con hallazgos, impacto y plan de acción.",
+    "Recomendación estratégica: migración a WhatsApp Business API para eliminar el riesgo a futuro."
+  ]
+},
 {
   title: "Hardening & Reingeniería - Corporación Azul",
   company: "Corporación Azul (Materiales de Construcción)",
   description: "Reconstrucción y blindaje de infraestructura web tras brecha de seguridad.",
   tech: ["WordPress", "PHP", "Hardening", "SEO Técnico", "Leaflet.js"],
-  link: "#", // Aquí pon el link si ya está en vivo
+  link: "#",
   img: "/corp_azul.png",
   images: ["/corp_azul.png", "/azul_lighthouse.png", "map.png"], 
   details: [
