@@ -9,6 +9,7 @@ const projects = [
   link: "https://github.com/tu-usuario/tu-repo/blob/main/INC-2026-0727-whatsapp-business-ban.md",
   img: "/cybersecurity_incidents/whatsApp_incident/incident_whatsapp_1part.jpeg",
   images: [
+    "/cybersecurity_incidents/whatsApp_incident/incident_whatsapp_1part.jpeg",
     "/cybersecurity_incidents/whatsApp_incident/incident_whatsapp_2part.jpeg",
     "/cybersecurity_incidents/whatsApp_incident/incident_whatsapp_3part.jpeg",
     "/cybersecurity_incidents/whatsApp_incident/incident_whatsapp_4part.jpeg",
