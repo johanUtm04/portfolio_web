@@ -6,7 +6,6 @@ import Contact from './components/Contact';
 import { useState } from 'react';
 import { translations } from './translations';
 import Navbar from "./components/Navbar";
-import CustomCursor from './components/CustomCursor';
 import SocialFloatingMenu from './components/SocialFloatingMenu';
 
 function App() {
@@ -24,8 +23,6 @@ function App() {
         {t.changeLang}
       </button>
       
-      <CustomCursor />
-
       <SocialFloatingMenu t={t} />
 
       <Navbar t={t} lang={lang} /> 

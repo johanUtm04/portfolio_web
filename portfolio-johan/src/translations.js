@@ -76,12 +76,11 @@ export const translations = {
       {
         title: "Gestión de Activos - PIHCSA",
         company: "PIHCSA - Sector Médico",
-        description: "Sistema para el control y auditoría de activos tecnológicos.",
+        description: "Sistema para el control y auditoría de activos tecnológicos y vehículos de diferentes empresas. Diseñado con el fin de preservar los datos de los activos y poder darle un seguimiento a los vehiculos de la empresa PIHCSA. Esto desde una ERP con arquitectura MVC y siguiendo los estandares de seguridad y escalabilidad de Laravel.",
         tech: ["PHP", "MySQL", "Laravel", "Linux"],
         link: "https://github.com/johanUtm04/gestion_activos_pihcsa",
-        notion: "https://www.notion.so/Documentacion-Tecnica-2c9bfd20d338806bac33ee7dbc6ab714?source=copy_link", 
-        img: "/pihcsa.jpeg",
-        images: ["/pihcsa1.webp", "/pihcsa2.webp", "/pihcsa3.webp", "/pihcsa4.webp"],
+        img: "/proyects/pihcsa/pihcsa.jpeg",
+        images: ["/proyects/pihcsa/pihcsa1.webp", "/proyects/pihcsa/pihcsa2.webp", "/proyects/pihcsa/pihcsa3.webp", "/proyects/pihcsa/pihcsa4.webp"],
         details: [
         "Arquitectura MVC con Laravel para escalabilidad.",
         "Módulo de auditoría para registro de movimientos de Activos.",
