@@ -8,6 +8,11 @@ const projects = [
   tech: ["Incident Response", "Root Cause Analysis", "Documentación Técnica", "Mitigación de Riesgo"],
   link: "https://github.com/tu-usuario/tu-repo/blob/main/INC-2026-0727-whatsapp-business-ban.md",
   img: "/cybersecurity_incidents/whatsApp_incident/incident_whatsapp_1part.jpeg",
+  images: [
+    "/cybersecurity_incidents/whatsApp_incident/incident_whatsapp_2part.jpeg",
+    "/cybersecurity_incidents/whatsApp_incident/incident_whatsapp_3part.jpeg",
+    "/cybersecurity_incidents/whatsApp_incident/incident_whatsapp_4part.jpeg",
+  ],
   details: [
     "Análisis de causa raíz: envío masivo no segmentado detonó el umbral anti-spam de Meta.",
     "Contención inmediata: hardening de privacidad y aislamiento de sesiones multi-dispositivo durante la restricción.",
