@@ -1,12 +1,12 @@
-import Home from "./components/Home";
-import About from "./components/About";
-import TechStack from './components/TechStack';
-import Works from "./components/Works";
-import Contact from './components/Contact';
+import Home from "./components/sections/Home";
+import About from "./components/sections/About";
+import TechStack from './components/sections/TechStack';
+import Works from "./components/sections/Works";
+import Contact from './components/sections/Contact';
 import { useState } from 'react';
 import { translations } from './translations';
-import Navbar from "./components/Navbar";
-import SocialFloatingMenu from './components/SocialFloatingMenu';
+import Navbar from "./components/layout/Navbar";
+import SocialFloatingMenu from './components/layout/SocialFloatingMenu';
 
 function App() {
   const [lang, setLang] = useState('es');
